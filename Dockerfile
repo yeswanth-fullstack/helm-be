@@ -1,12 +1,15 @@
-FROM python:3.8-slim-buster
+FROM python:alpine3.7
+
+COPY . /app
 
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
-RUN pip3 install -r requirements.txt
+ENV PORT 5000
 
-COPY . .
+EXPOSE 5000
 
-CMD ["flask", "--app", "app", "run", "--host=0.0.0.0"]
+ENTRYPOINT [ "python" ]
 
+CMD [ "app.py" ]

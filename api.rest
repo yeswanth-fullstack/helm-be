@@ -1,0 +1,27 @@
+# ====> GET all <=======
+
+# GET http://localhost:5000/api
+
+# ====> CREATE one <=======
+
+# POST http://localhost:5000/api
+# content-type: application/json
+
+# {
+#     "name": "csdcdssc",
+#     "message": "csdcdsdc"
+# }
+
+# ====> GET one <=======
+# GET http://localhost:5000/api/660bbbb6f0096bf3bb9c85a2
+
+# ====> UPDATE one <=======
+# PUT http://localhost:5000/api/660bbbb6f0096bf3bb9c85a2
+# content-type: application/json
+
+# {
+#     "name": "Yeswanth Annadata"
+# }
+
+# ====> DELETE one <=======
+# DELETE http://localhost:5000/api/660bbc0cf0096bf3bb9c85a3
